@@ -92,6 +92,9 @@ for (var s in config) {
 }
 var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
+var auth = require('./controllers/auth.js');
+auth.setup(app);
+
 // app.get('/', function (req, res, next) {
 //   res.render('pages/index', {user:
 //     req.user,
@@ -209,3 +212,13 @@ app.start = function() {
 if (require.main === module) {
     app.start();
 }
+
+
+
+
+
+
+
+
+
+
