@@ -8,11 +8,11 @@
       "./node_modules/loopback-component-passport/lib/models"
     ]
   },
-  "User": {
+  "user": {
     "dataSource": "db",
     "public": true
   },
-  "AccessToken": {
+  "accessToken": {
     "dataSource": "db",
     "public": true
   },

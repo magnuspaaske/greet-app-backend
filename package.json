@@ -1,12 +1,15 @@
 {
   "name": "greet",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+    "start": "node server/server.js"
   },
   "dependencies": {
-    "compression": "^1.0.3",
+    "body-parser": "^1.9.0",
+    "compression": "^1.0.11",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.3.2",
     "errorhandler": "^1.1.1",
     "express-flash": "0.0.2",
     "express-session": "^1.7.6",
@@ -20,17 +23,19 @@
     "passport-facebook": "^1.0.3",
     "passport-google-oauth": "~0.1.5",
     "passport-local": "^1.0.0",
-    "passport-twitter": "~1.0.2"
+    "passport-oauth2": "^1.1.2",
+    "passport-twitter": "~1.0.2",
+    "serve-favicon": "^2.0.1"
   },
   "optionalDependencies": {
-    "loopback-explorer": "^1.1.0"
+    "loopback-explorer": "^1.2.9"
   },
   "devDependencies": {
     "jshint": "^2.5.6"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "git://github.com/magnuspaaske/greet-app-backend"
   },
   "description": "greet"
 }
