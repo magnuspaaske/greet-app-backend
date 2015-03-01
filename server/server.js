@@ -69,7 +69,7 @@ app.use(loopback.token({
   model: app.models.accessToken
 }));
 
-app.use(loopback.cookieParser(app.get('cookieSecret')));
+app.use(loopback.cookieParser('mKqpEudFgESvKEktxsYV'));
 app.use(loopback.session({
     secret: 'kitty',
     saveUninitialized: true,
@@ -212,6 +212,16 @@ app.start = function() {
 if (require.main === module) {
     app.start();
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

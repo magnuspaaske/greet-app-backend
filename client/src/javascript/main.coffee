@@ -2,13 +2,13 @@ require.config({
   paths: {
     'underscore': '../bower_components/underscore/underscore'
     'backbone': '../bower_components/backbone/backbone'
-    'marionette': '../bower_components/backbone.marionette/lib/backbone.marionette'
     'jquery': '../bower_components/jquery/dist/jquery'
-    'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap'
     'text': '../bower_components/text/text'
     'jquery.cookie': '../bower_components/jquery.cookie/jquery.cookie'
     'parsley': '../lib/parsley/parsley'
-    'tpl': '../lib/tpl/tpl'
+    # 'tpl': '../lib/tpl/tpl'
+    'require-jade': "../bower_components/require-jade/jade"
+
   },
   shim: {
     'underscore': {
@@ -43,23 +43,18 @@ require([
   'RouterController'
   'jquery.cookie'
 ], (app, Backbone, Router, RouterController) ->
-  $.ajaxSetup({
-    cache: false,
-    contentType: 'application/json',
-    dataType: 'json',
-    headers: {
-      'Authorization': $.cookie('access_token') || ''
-    },
-    statusCode: {
-      401: () ->
-        window.location.replace('#/login');
-    }
-  });
+  console.log 'yo'
+  # $.ajaxSetup({
+  #   cache: false,
+  #   contentType: 'application/json',
+  #   dataType: 'json',
+  #   headers: {
+  #     'Authorization': $.cookie('access_token') || ''
+  #   },
+  #   statusCode: {
+  #     401: () ->
+  #       window.location.replace('#/login');
+  #   }
+  # });
 
-  app.session.checkAuth {
-    complete: () ->
-      app.start()
-      new Router({ controller: RouterController })
-      Backbone.history.start()
-  }
 )
