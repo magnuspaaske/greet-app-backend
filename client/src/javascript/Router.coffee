@@ -3,6 +3,9 @@ define([
   'views/NavigationView'
 ], (Backbone) ->
   return Backbone.Router.extend {
+    initialize: (app) ->
+      console.log 'yo', app
+
     routes: {
       'login':          'showLoginView'     # login
       'auth/account':   'showAccountView'   # account

@@ -1,7 +1,8 @@
 define([
   'backbone'
-  'views/NavigationView'
-], (Backbone, NavigationView) ->
+  'views/NavigationView',
+  'Router'
+], (Backbone, NavigationView, Router) ->
 
   app = {
     regions: {
@@ -11,5 +12,9 @@ define([
     }
   }
 
+  window.approuter = new Router(app)
+  Backbone.history.start {
+    pushState: true
+  }
   return window.app = app
 )

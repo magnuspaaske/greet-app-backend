@@ -2,6 +2,9 @@
 (function() {
   define(['backbone', 'views/NavigationView'], function(Backbone) {
     return Backbone.Router.extend({
+      initialize: function(app) {
+        return console.log('yo', app);
+      },
       routes: {
         'login': 'showLoginView',
         'auth/account': 'showAccountView'

@@ -1,17 +1,17 @@
 define([
-  'backbone',
-  'require-jade',
-], (Backbone, Jade) ->
+  'backbone'
+  'jade!/templates/navbar'
+], (Backbone, Navbar) ->
   return Backbone.View.extend {
-
-    $el: $('section#navbar')
 
     initialize: () ->
       console.log 'navbar', this.$el
-      window.Jade = Jade
+      this.$el = $('section#navbar')
+      this.render()
+
+      # window.Jade = Jade
 
     render: () ->
-
-
+      this.$el.html Navbar()
   }
 )

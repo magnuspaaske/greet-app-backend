@@ -8,7 +8,8 @@
       'text': '../bower_components/text/text',
       'jquery.cookie': '../bower_components/jquery.cookie/jquery.cookie',
       'parsley': '../lib/parsley/parsley',
-      'require-jade': "../bower_components/require-jade/jade"
+      // 'handlebars': '../bower_components/handlebars/handlebars',
+      'jade': '../bower_components/require-jade/jade'
     },
     shim: {
       'underscore': {

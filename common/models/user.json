@@ -5,6 +5,15 @@
   "properties": {
     "firstName": {
       "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "phoneCountry": {
+      "type": "number"
+    },
+    "phoneNumber": {
+      "type": "number"
     }
   },
   "relations": {
