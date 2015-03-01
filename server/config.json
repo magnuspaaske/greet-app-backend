@@ -1,6 +1,6 @@
 {
   "restApiRoot": "/api",
-  "host": "magnuss-macbook-pro.local",
+  "host": "10.1.255.125",
   "port": 3000,
   "remoting": {
     "context": {

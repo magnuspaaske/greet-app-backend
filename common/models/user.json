@@ -40,6 +40,12 @@
       "principalId": "$authenticated",
       "permission": "ALLOW",
       "property": "me"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "mirror"
     }
   ],
   "methods": []
