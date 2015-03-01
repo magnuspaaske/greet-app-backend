@@ -11,5 +11,44 @@
     "failureRedirect": "/login",
     "scope": ["email"],
     "failureFlash": true
+  },
+  "instagram-login": {
+    "provider": "instagram",
+    "module": "passport-instagram",
+    "clientID": "c0131b65a94b457b8193d95a33380967",
+    "clientSecret": "c145ac5aec464719a2e190402c2a90d1",
+    "callbackURL": "/auth/instagram/callback",
+    "authPath": "/auth/instagram",
+    "callbackPath": "/auth/instagram/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email"],
+    "failureFlash": true
+  },
+  "twitter-login": {
+    "provider": "twitter",
+    "module": "passport-twitter",
+    "consumerKey": "89TFR0ByZmNzGeIEs29E4RQOe",
+    "consumerSecret": "U9ufdOOECWD8DWpT1flSjZirABafoa8HHWpCB3s67or7URMJBK",
+    "callbackURL": "/auth/twitter/callback",
+    "authPath": "/auth/twitter",
+    "callbackPath": "/auth/twitter/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email"],
+    "failureFlash": true
+  },
+  "linkedin-login": {
+    "provider": "linkedin",
+    "module": "passport-linkedin-oauth2",
+    "clientID": "a6f8d5f2-1189-4512-a0d9-d727ccf11a8e",
+    "clientSecret": "26941354-e852-4110-bdfd-086cc51ec5fa",
+    "callbackURL": "/auth/linkedin/callback",
+    "authPath": "/auth/linkedin",
+    "callbackPath": "/auth/linkedin/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email"],
+    "failureFlash": true
   }
 }
