@@ -1,7 +1,6 @@
 define([
-    'backbone'
+  'backbone'
 ], (Backbone) ->
-
   return Backbone.Model.extend {
     defaults: {
       id: 0
@@ -9,8 +8,12 @@ define([
       name: ''
       email: ''
     }
+
+    initialize: () ->
+
+
     url: function() {
-      return '/api/Users';
+      return '/api/Users'
     }
   }
 })

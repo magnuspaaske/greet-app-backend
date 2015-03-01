@@ -4,18 +4,19 @@
   "base": "User",
   "properties": {
     "firstName": {
-      "type": "string"
+        "type": "string"
     },
     "lastName": {
-      "type": "string"
+        "type": "string"
     },
     "phoneCountry": {
-      "type": "number"
+        "type": "number"
     },
     "phoneNumber": {
       "type": "number"
     }
   },
+  "validations": [],
   "relations": {
     "accessTokens": {
       "type": "hasMany",
@@ -33,7 +34,13 @@
       "foreignKey": "userId"
     }
   },
-  "validations": [],
-  "acls": [],
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "me"
+    }
+  ],
   "methods": []
 }

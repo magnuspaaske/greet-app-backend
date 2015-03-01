@@ -1,6 +1,7 @@
 define([
   'backbone'
-  'views/NavigationView',
+  'views/NavigationView'
+  'views/MainView'
   'Router'
 ], (Backbone, NavigationView, Router) ->
 

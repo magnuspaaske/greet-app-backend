@@ -209,7 +209,7 @@ app.start = function() {
         "user", "accessToken", "userCredential", "userIdentity",
         "ACL", "RoleMapping", "Role"
         ];
-    app.datasources['db'].autoupdate(dbMigrateModels, function(err) {console.log(err);});
+    app.datasources['db'].autoupdate(dbMigrateModels, function(err) {console.log("App start: ", err);});
 
     // start the web server
     return app.listen(function() {
@@ -222,6 +222,8 @@ app.start = function() {
 if (require.main === module) {
     app.start();
 }
+
+
 
 
 

@@ -3382,6 +3382,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/client\/js\/app.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/client\/js\/app.js",
+		"outputAbbreviatedPath": "\/client\/js\/app.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/client\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -3404,17 +3415,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
-	"\/client\/js\/Router.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/client\/js\/Router.js",
-		"outputAbbreviatedPath": "\/client\/js\/Router.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
 	"\/client\/js\/RouterController.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -3432,6 +3432,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/client\/js\/Templates.js",
 		"outputAbbreviatedPath": "\/client\/js\/Templates.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/client\/js\/views\/MainView.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/client\/js\/views\/MainView.js",
+		"outputAbbreviatedPath": "\/client\/js\/views\/MainView.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3558,6 +3569,32 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
+	"\/client\/src\/javascript\/views\/LoginView.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/client\/src\/javascript\/views\/LoginView.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/client\/js\/views\/LoginView.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/client\/src\/javascript\/views\/MainView.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/client\/src\/javascript\/views\/MainView.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/client\/js\/views\/MainView.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
 	"\/client\/src\/javascript\/views\/NavigationView.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
@@ -3586,6 +3623,17 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
+		},
+	"\/client\/templates\/login.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/client\/templates\/login.jade",
+		"outputAbbreviatedPath": "\/client\/templates\/login.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/client\/templates\/navbar.jade": {
 		"compileDebug": 1,

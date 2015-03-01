@@ -24,9 +24,10 @@
     "passport-facebook": "^1.0.3",
     "passport-google-oauth": "~0.1.5",
     "passport-local": "^1.0.0",
+    "passport-instagram": "^0.1.2",
+    "passport-linkedin-oauth2": "^1.2.1",
     "passport-oauth2": "^1.1.2",
-    "passport-twitter": "~1.0.2",
-    "serve-favicon": "^2.0.1"
+    "passport-twitter": "~1.0.2"
   },
   "optionalDependencies": {
     "loopback-explorer": "^1.2.9"
