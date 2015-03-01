@@ -2,6 +2,11 @@
   "name": "user",
   "plural": "users",
   "base": "User",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    }
+  },
   "relations": {
     "accessTokens": {
       "type": "hasMany",

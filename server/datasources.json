@@ -1,6 +1,9 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "postgresql",
+    "user": "admin",
+    "database": "greet-app",
+    "debug": true
   }
 }

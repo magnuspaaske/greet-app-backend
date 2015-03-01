@@ -201,6 +201,16 @@ app.use(loopback.urlNotFound());
 app.use(loopback.errorHandler());
 
 app.start = function() {
+
+    // autoupdate db
+    // as per http://stackoverflow.com/questions/23168958/auto-create-mysql-table-with-strongloop
+    // and https://strongloop.com/strongblog/recipes-for-loopback-models-part-5-of-5-model-synchronization-with-relational-databases/
+    var dbMigrateModels = [
+        "user", "accessToken", "userCredential", "userIdentity",
+        "ACL", "RoleMapping", "Role"
+        ];
+    app.datasources['db'].autoupdate(dbMigrateModels, function(err) {console.log(err);});
+
     // start the web server
     return app.listen(function() {
         app.emit('started');
@@ -212,6 +222,12 @@ app.start = function() {
 if (require.main === module) {
     app.start();
 }
+
+
+
+
+
+
 
 
 
